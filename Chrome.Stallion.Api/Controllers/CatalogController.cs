@@ -7,10 +7,10 @@ namespace Chrome.Stallion.Api.Controllers
     [Route("[controller]")]
     public class CatalogController : ControllerBase
     {
-        [httpGet]
+        [HttpGet]
         public IActionResult GetItems()
         {
             return Ok("hello world.");
-        }
-    }
+        }  
+    } 
 }

@@ -1,5 +1,4 @@
 namespace Chrome.Stallion.Domain.Catalog;
-
 public class Rating
 {
     public int Stars { get; set; }
@@ -23,3 +22,4 @@ public class Rating
         this.Review = review;
     }
 }
+
