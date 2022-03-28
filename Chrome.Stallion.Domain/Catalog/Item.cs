@@ -1,6 +1,6 @@
 using System;
 
-namespace Chome.Stallion.Domain.Catalog
+namespace Chrome.Stallion.Domain.Catalog
 {
     public class Item
     {
