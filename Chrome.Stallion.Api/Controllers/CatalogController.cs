@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Chrome.Stallion.Domain.Catalog;
+using Chrome.Stallion.Data;
 
 namespace Chrome.Stallion.Api.Controllers
 {
@@ -7,6 +8,12 @@ namespace Chrome.Stallion.Api.Controllers
     [Route("[controller]")]
     public class CatalogController : ControllerBase
     {
+        private readonly StoreContext _db;
+
+        public CatalogController(StoreContext db)
+        {
+            _db = db;
+        }
         [HttpGet]
         public IActionResult GetItems()
         {
@@ -17,7 +24,7 @@ namespace Chrome.Stallion.Api.Controllers
                 new Item("Shorts", "Ohio State shorts.", "Nike", 44.99m)
             };
 
-            return Ok(items);
+            return Ok(_db.Items);
         }  
 
          [HttpGet("{id:int}")]
