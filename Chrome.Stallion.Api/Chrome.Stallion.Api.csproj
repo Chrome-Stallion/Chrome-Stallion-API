@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Chrome.Stallion.Domain\Chrome.Stallion.Domain.csproj" />
+    <ProjectReference Include="..\Chrome.Stallion.Data\Chrome.Stallion.Data.csproj" />
   </ItemGroup>
 
 </Project>
