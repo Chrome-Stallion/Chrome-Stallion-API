@@ -1,0 +1,16 @@
+### Sent GET request to the home ('root') of the API
+GET https://localhost:7239/catalog/
+
+### Sent PUT request for item number 3
+PUT https://localhost:7239/catalog/3
+Content-Type: application/json
+
+{
+  "id":3,
+  "name": "Shoes",
+  "description": "Running Shoes",
+  "brand": "Nike",
+  "price": 109.99
+}
+
+//my ports are 5208 and 7239

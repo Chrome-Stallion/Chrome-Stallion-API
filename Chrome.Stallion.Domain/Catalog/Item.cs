@@ -10,7 +10,6 @@ namespace Chrome.Stallion.Domain.Catalog
         public string Brand { get; set; }
         public decimal Price { get; set; }
 
-        //never made a rating object? doesnt reference the Rating.cs file?
         public List<Rating> Ratings { get; set; } = new List<Rating>();
 
         public Item(string name, string description, string brand, decimal price)
