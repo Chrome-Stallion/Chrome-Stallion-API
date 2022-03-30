@@ -11,6 +11,9 @@ namespace Chrome.Stallion.Data
         
         public DbSet<Item> Items { get; set; }
 
+         public DbSet<Order> Orders { get; set; }
+        
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
