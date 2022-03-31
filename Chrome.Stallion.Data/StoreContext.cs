@@ -1,5 +1,7 @@
 ﻿using Chrome.Stallion.Domain.Catalog;
 using Microsoft.EntityFrameworkCore;
+using Chrome.Stallion.Domain.Orders;
+
 
 namespace Chrome.Stallion.Data
 {
@@ -11,7 +13,7 @@ namespace Chrome.Stallion.Data
         
         public DbSet<Item> Items { get; set; }
 
-         public DbSet<Order> Orders { get; set; }
+        public DbSet<Order> Orders { get; set; }
         
 
         protected override void OnModelCreating(ModelBuilder builder)
