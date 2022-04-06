@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chrome.Stallion.Api", "Chro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chrome.Stallion.Domain", "Chrome.Stallion.Domain\Chrome.Stallion.Domain.csproj", "{809C617B-3713-49B6-B3AD-6462300E5158}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chrome-Stallion.Data", "Chrome-Stallion.Data\Chrome-Stallion.Data.csproj", "{C249E137-D0A1-4D95-A848-A92C7B687A72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chrome-Stallion.Data", "Chrome.Stallion.Data\Chrome.Stallion.Data.csproj", "{C249E137-D0A1-4D95-A848-A92C7B687A72}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chrome.Stallion.Data", "Chrome.Stallion.Data\Chrome.Stallion.Data.csproj", "{D885FBAF-19EE-4EBE-95CF-B9A7FC58D76F}"
 EndProject
