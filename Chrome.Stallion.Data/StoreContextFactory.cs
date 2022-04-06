@@ -5,7 +5,7 @@ namespace Chrome.Stallion.Data
 {
     public class StoreContextFactory : IDesignTimeDbContextFactory<StoreContext>
     {
-        public StoreContextFactory CreateDbContext(string[] args)
+        public StoreContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<StoreContext>();
             optionsBuilder.UseSqlite("Data Source=../Registar.sqlite");
