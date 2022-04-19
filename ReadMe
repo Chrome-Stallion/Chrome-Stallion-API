@@ -1,0 +1,3 @@
+If errors on clone from github, execute this command in both the Api and Data Project
+
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
