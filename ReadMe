@@ -11,3 +11,15 @@ dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 cd ..
 cd Chrome.Stallion.Data
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+
+
+Info on Swagger:
+-----------------------------
+Run through the Run and Debug menu
+copy url of local host port that it opens in browser
+
+add swagger end of URL part as shown below:
+https://localhost:(your port number)/swagger/index.html
+
+^You need the REST CLIENT extension for all this stuff but you should have that by now
+
