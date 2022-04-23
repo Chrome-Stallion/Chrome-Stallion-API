@@ -14,3 +14,15 @@ Content-Type: application/json
 }
 
 //my ports are 5208 and 7239
+
+### GET token from Auth0
+curl --request POST \
+  --url https://tam251.us.auth0.com/oauth/token \
+  --header 'content-type: application/json' \
+  --data '{"client_id":"2WD30ku38kM6lzEePXFqScT2XdnMXO8E","client_secret":"73fV9gNiuG-MH5mMPE2fQpeSBnMLcGMMpWjfw_B7fMpyXUMZlud-XsPwrYCAWgtl","audience":"https://github.com/Chrome-Stallion","grant_type":"client_credentials"}'
+
+
+  ### DELETE a Item to the Catalog collection 
+  curl --request DELETE \
+      --url https://localhost:7250/catalog/3 \
+      --header 'authorization: Bearer {PUT_YOUR_TOKEN_HERE}'
