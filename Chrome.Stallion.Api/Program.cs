@@ -4,11 +4,20 @@ using Microsoft.EntityFrameworkCore.Sqlite;
 
 var builder = WebApplication.CreateBuilder(args);
 
+string authority = builder.Configuration["Auth0:Authority"] ??
+    throw new ArgumentNullException("Auth0:Authority");
+
+string audience = builder.Configuration["Auth0:Audience"] ??
+    throw new ArgumentNullException("Auth0:Audience");
+
+string storeConnectionString = builder.Configuration.GetConnectionString("StoreConnection") ??
+    throw new ArgumentNullException("ConnectionString:StoreConnection");
+
 // Add services to the container.
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<StoreContext>(options =>
-    options.UseSqlite("Data Source=../Registrar.sqlite",
+    options.UseSqlServer(storeConnectionString,
     b => b.MigrationsAssembly("Chrome.Stallion.Api"))
 );
 builder.Services.AddCors(options =>
